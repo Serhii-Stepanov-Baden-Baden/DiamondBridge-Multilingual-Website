@@ -1,1 +1,14 @@
-{"version": 2, "name": "diamondbridge-multilingual", "builds": [{"src": "diamondbridge-multilingual/package.json", "use": "@vercel/static-build", "config": {"distDir": "dist"}}], "routes": [{"src": "/(.*)", "dest": "/diamondbridge-multilingual/dist/$1"}], "env": {"NODE_ENV": "production"}}
+{
+  "builds": [
+    {
+      "src": "diamondbridge-multilingual/package.json", 
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "diamondbridge-multilingual/dist"
+      }
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
