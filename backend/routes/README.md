@@ -266,4 +266,4 @@
 - **Форматы файлов**: 10+ (изображения, аудио, видео, документы)
 - **Модули интеграции**: ai-core, asmf-engine, google-drive, config
 
-Система готова к production развертыванию и обеспечивает полный функционал для Autonomous Semantic Memory Framework AI Agent.
+Система готова к production развертыванию
