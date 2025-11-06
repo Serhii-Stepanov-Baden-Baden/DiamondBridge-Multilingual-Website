@@ -20,7 +20,6 @@ export function AIChatSection() {
   const chatMutation = useMutation({
     mutationFn: (request: ChatRequest) => apiClient.sendChatMessage(request),
     onMutate: () => {
-      // Add user message immediately
       const userMessage: ChatMessage = {
         id: Date.now().toString(),
         role: 'user',
@@ -29,7 +28,6 @@ export function AIChatSection() {
       };
       setMessages(prev => [...prev, userMessage]);
 
-      // Add loading message
       const loadingMessage: ChatMessage = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
@@ -58,10 +56,7 @@ export function AIChatSection() {
     },
     onError: () => {
       toast.error(t('aiChat.error') as string);
-      setMessages(prev => {
-        const withoutLoading = prev.filter(msg => !msg.isLoading);
-        return withoutLoading;
-      });
+      setMessages(prev => prev.filter(msg => !msg.isLoading));
     },
   });
 
@@ -89,7 +84,10 @@ export function AIChatSection() {
   };
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    // Скроллим только если есть больше одного сообщения (т.е. пользователь начал диалог)
+    if (messages.length > 1) {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [messages]);
 
   return (
@@ -105,7 +103,6 @@ export function AIChatSection() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          {/* Chat Header */}
           <div className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
@@ -121,7 +118,6 @@ export function AIChatSection() {
             </button>
           </div>
 
-          {/* Chat Messages */}
           <div className="h-96 overflow-y-auto p-6 space-y-4">
             {messages.map((message) => (
               <div
@@ -153,7 +149,6 @@ export function AIChatSection() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Chat Input */}
           <div className="border-t border-gray-200 p-4">
             <div className="flex space-x-2">
               <textarea
