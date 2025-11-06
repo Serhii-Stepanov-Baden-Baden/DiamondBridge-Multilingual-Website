@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { I18nProvider } from './i18n/Context';
 import { QueryProvider } from './providers/QueryProvider';
@@ -15,9 +15,16 @@ import { DashboardSection } from './components/DashboardSection';
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import './App.css'
+import './App.css';
 
 function App() {
+  // 🛠️ Фикс автоскролла при загрузке
+  useEffect(() => {
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
+
   return (
     <QueryProvider>
       <I18nProvider>
@@ -37,7 +44,7 @@ function App() {
             <ContactSection />
           </main>
           <Footer />
-          
+
           {/* Toast Notifications */}
           <Toaster
             position="top-right"
