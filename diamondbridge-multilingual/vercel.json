@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "diamondbridge-multilingual/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build"
     }
   ],
