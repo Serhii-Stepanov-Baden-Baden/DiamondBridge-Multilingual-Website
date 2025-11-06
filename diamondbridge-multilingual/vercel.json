@@ -8,8 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "diamondbridge-multilingual/dist/index.html"
+      "dest": "/index.html"
     }
-  ],
-  "outputDirectory": "diamondbridge-multilingual/dist"
+  ]
 }
