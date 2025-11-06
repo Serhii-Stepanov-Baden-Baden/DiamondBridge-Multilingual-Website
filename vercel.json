@@ -2,10 +2,7 @@
   "builds": [
     {
       "src": "diamondbridge-multilingual/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "diamondbridge-multilingual/dist"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
@@ -13,5 +10,6 @@
       "src": "/(.*)",
       "dest": "diamondbridge-multilingual/dist/index.html"
     }
-  ]
+  ],
+  "outputDirectory": "diamondbridge-multilingual/dist"
 }
