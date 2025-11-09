@@ -446,11 +446,9 @@ export const getTranslation = (lang: Language, key: string): string => {
     path.reduce((acc, part) => acc?.[part], obj);
 
   const keys = key.split('.');
-
   const value = getNestedValue(translations[lang], keys);
   if (value) return value;
 
   const fallback = getNestedValue(translations.ru, keys);
   return fallback || key;
 };
-
