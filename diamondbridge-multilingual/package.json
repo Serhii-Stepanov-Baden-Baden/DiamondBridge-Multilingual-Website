@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "clean": "rm -rf node_modules .pnpm-store pnpm-lock.yaml && pnpm store prune"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.2",
@@ -79,9 +80,4 @@
     "vite": "^5.4.8",
     "vite-plugin-source-identifier": "1.1.2"
   }
-}
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
 }
