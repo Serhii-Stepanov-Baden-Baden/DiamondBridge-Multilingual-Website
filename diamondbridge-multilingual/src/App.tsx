@@ -18,26 +18,26 @@ import './index.css';
 
 const App = () => {
   return (
+    <LanguageProvider>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900">
-    <Navigation />
-    <main className="pt-16">
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <MechanicsSection />
-      <GeniusHubsSection />
-      <AIChatSection />
-      <MediaToolsSection />
-      <DriveSection />
-      <DashboardSection />
-      <AboutSection />
-      <ContactSection />
-    </main>
-    <Footer />
-  </div>
-```
-);
-
+        <Navigation />
+        <main className="pt-16">
+          <HeroSection />
+          <ProblemSection />
+          <SolutionSection />
+          <MechanicsSection />
+          <GeniusHubsSection />
+          <AIChatSection />
+          <MediaToolsSection />
+          <DriveSection />
+          <DashboardSection />
+          <AboutSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
+  );
 };
 
 export default App;
