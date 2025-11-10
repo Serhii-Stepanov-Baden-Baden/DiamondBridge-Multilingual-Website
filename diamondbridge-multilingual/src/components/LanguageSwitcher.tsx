@@ -1,5 +1,3 @@
-// LanguageSwitcher.tsx — Переключатель языков с флагами
-
 import React from 'react';
 import { useLanguage } from '../i18n/Context';
 
@@ -21,7 +19,7 @@ const languages: LanguageFlag[] = [
   { code: 'zh', name: '中文', nativeName: '中文', flag: '🇨🇳' }
 ];
 
-const LanguageSwitcher: React.FC = () => {
+export const LanguageSwitcher: React.FC = () => {
   const { currentLanguage, setLanguage } = useLanguage();
 
   return (
@@ -44,5 +42,3 @@ const LanguageSwitcher: React.FC = () => {
     </div>
   );
 };
-
-export const LanguageSwitcher = () => { ... }
