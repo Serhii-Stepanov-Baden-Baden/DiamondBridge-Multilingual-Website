@@ -1,5 +1,3 @@
-// Context.tsx — Контекст для управления языками
-
 import React, {
   createContext,
   useContext,
@@ -8,8 +6,7 @@ import React, {
   ReactNode,
 } from 'react';
 import { translations } from './translations';
-
-export type Language = keyof typeof translations;
+import { getTranslation, Language } from './i18n';
 
 interface LanguageContextType {
   currentLanguage: Language;
@@ -25,7 +22,6 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  // Определяем язык браузера или используем русский по умолчанию
   const getInitialLanguage = (): Language => {
     const saved = localStorage.getItem('diamondbridge-language') as Language;
     if (saved && translations[saved]) return saved;
@@ -43,18 +39,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     localStorage.setItem('diamondbridge-language', lang);
   };
 
-  // Безопасная функция для получения перевода
-  const getNestedValue = (obj: any, path: string[]): any =>
-    path.reduce((acc, part) => acc?.[part], obj);
-
-  const t = (key: string): string => {
-    const keys = key.split('.');
-    const value = getNestedValue(translations[currentLanguage], keys);
-    if (value) return value;
-
-    const fallback = getNestedValue(translations.ru, keys);
-    return fallback || key;
-  };
+  const t = (key: string): string => getTranslation(currentLanguage, key);
 
   const availableLanguages: Language[] = ['ru', 'en', 'de', 'fr', 'es', 'it', 'ja', 'zh'];
 
