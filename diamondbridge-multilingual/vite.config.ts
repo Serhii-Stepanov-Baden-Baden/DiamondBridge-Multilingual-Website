@@ -1,12 +1,15 @@
-import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import sourceIdentifierPlugin from 'vite-plugin-source-identifier';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const isProd = process.env.BUILD_MODE === 'prod';
 
 export default defineConfig({
-  base: '/', // 👈 обязательно для Vercel
+  base: '/',
   plugins: [
     react(),
     sourceIdentifierPlugin({
@@ -17,10 +20,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': resolve(__dirname, './src'),
     },
   },
   build: {
-    outDir: 'dist', // 👈 Vercel ищет именно эту папку
+    outDir: 'dist',
   },
 });
