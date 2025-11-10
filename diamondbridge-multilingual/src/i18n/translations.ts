@@ -422,25 +422,14 @@ export const translations = {
   }
 };
 
-// Типы для TypeScript
+// ✅ Сначала импорт
+import { translations } from './translations';
+
+// ✅ Типы
 export type Language = keyof typeof translations;
 export type TranslationKey = keyof typeof translations.ru;
 
-// Функция для получения перевода
-export const getTranslation = (lang: Language, key: string): string => {
-  const keys = key.split('.');
-  let value: any = translations[lang];
-  
-  for (const k of keys) {
-    value = value?.[k];
-  }
-  
-  return value || translations.ru[key as keyof typeof translations.ru] || key;
-};
-import { translations } from './translations';
-
-export type Language = keyof typeof translations;
-
+// ✅ Функция для получения перевода
 export const getTranslation = (lang: Language, key: string): string => {
   const getNestedValue = (obj: any, path: string[]): any =>
     path.reduce((acc, part) => acc?.[part], obj);
