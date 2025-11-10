@@ -1,4 +1,4 @@
-` // App.tsx — Полноценный DiamondBridge Multilingual Website
+// App.tsx — Полноценный DiamondBridge Multilingual Website
 
 import React from 'react';
 import { LanguageProvider } from './i18n/Context';
