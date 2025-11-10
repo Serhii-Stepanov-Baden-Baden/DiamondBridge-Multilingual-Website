@@ -45,4 +45,4 @@ const LanguageSwitcher: React.FC = () => {
   );
 };
 
-export default LanguageSwitcher;
+export const LanguageSwitcher = () => { ... }
