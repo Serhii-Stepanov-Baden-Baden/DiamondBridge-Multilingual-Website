@@ -1,8 +1,8 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 
 export function ContactSection() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
 
   return (
     <section id="contacts" className="py-20 bg-white">
@@ -22,6 +22,7 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('contact.getInTouch')}</h3>
               <div className="space-y-6">
+                {/* Email */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-blue-600 text-xl">📧</span>
@@ -35,6 +36,7 @@ export function ContactSection() {
                   </div>
                 </div>
 
+                {/* Telegram */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-green-600 text-xl">📱</span>
@@ -48,6 +50,7 @@ export function ContactSection() {
                   </div>
                 </div>
 
+                {/* GitHub */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-gray-600 text-xl">💻</span>
@@ -111,7 +114,7 @@ export function ContactSection() {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('contact.email')}
@@ -123,7 +126,7 @@ export function ContactSection() {
                   placeholder={t('contact.emailPlaceholder') as string}
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('contact.subject')}
@@ -140,7 +143,7 @@ export function ContactSection() {
                   <option value="other">{t('contact.other')}</option>
                 </select>
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('contact.message')}
@@ -152,7 +155,7 @@ export function ContactSection() {
                   placeholder={t('contact.messagePlaceholder') as string}
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
