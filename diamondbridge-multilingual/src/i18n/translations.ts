@@ -44,12 +44,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Навигация',
-      project: 'Проект',
-      contactChannels: 'Каналы связи',
+      navigation: {
+        title: 'Навигация',
+        links: ['Главная', 'О нас', 'Услуги', 'Контакты']
+      },
+      project: {
+        title: 'Проект',
+        links: ['Проблема', 'Решение', 'Механика', 'Гениальные хабы']
+      },
+      contactChannels: {
+        title: 'Каналы связи',
+        links: ['ИИ Чат', 'Медиа Инструменты', 'Драйв', 'Панель Управления']
+      },
       copyright: '© 2025 DiamondBridge. Все права защищены.',
-      version: 'Версия',
-      createdBy: 'Создано'
+      version: 'Версия 1.0.0',
+      createdBy: 'Создано MiniMax Agent'
     }
   },
   en: {
@@ -82,12 +91,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Navigation',
-      project: 'Project',
-      contactChannels: 'Contact Channels',
+      navigation: {
+        title: 'Navigation',
+        links: ['Home', 'About', 'Services', 'Contact']
+      },
+      project: {
+        title: 'Project',
+        links: ['Problem', 'Solution', 'Mechanics', 'Genius Hubs']
+      },
+      contactChannels: {
+        title: 'Contact Channels',
+        links: ['AI Chat', 'Media Tools', 'Drive', 'Dashboard']
+      },
       copyright: '© 2025 DiamondBridge. All rights reserved.',
-      version: 'Version',
-      createdBy: 'Created by'
+      version: 'Version 1.0.0',
+      createdBy: 'Created by MiniMax Agent'
     }
   },
   de: {
@@ -120,12 +138,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Navigation',
-      project: 'Projekt',
-      contactChannels: 'Kontaktkanäle',
+      navigation: {
+        title: 'Navigation',
+        links: ['Startseite', 'Über uns', 'Dienstleistungen', 'Kontakt']
+      },
+      project: {
+        title: 'Projekt',
+        links: ['Problem', 'Lösung', 'Mechanik', 'Geniale Hubs']
+      },
+      contactChannels: {
+        title: 'Kontaktkanäle',
+        links: ['KI Chat', 'Medien Tools', 'Laufwerk', 'Dashboard']
+      },
       copyright: '© 2025 DiamondBridge. Alle Rechte vorbehalten.',
-      version: 'Version',
-      createdBy: 'Erstellt von'
+      version: 'Version 1.0.0',
+      createdBy: 'Erstellt von MiniMax Agent'
     }
   },
   fr: {
@@ -158,12 +185,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Navigation',
-      project: 'Projet',
-      contactChannels: 'Canaux de Contact',
+      navigation: {
+        title: 'Navigation',
+        links: ['Accueil', 'À propos', 'Services', 'Contact']
+      },
+      project: {
+        title: 'Projet',
+        links: ['Problème', 'Solution', 'Mécanique', 'Hubs de Génie']
+      },
+      contactChannels: {
+        title: 'Canaux de Contact',
+        links: ['Chat IA', 'Outils Média', 'Conduite', 'Tableau de Bord']
+      },
       copyright: '© 2025 DiamondBridge. Tous droits réservés.',
-      version: 'Version',
-      createdBy: 'Créé par'
+      version: 'Version 1.0.0',
+      createdBy: 'Créé par MiniMax Agent'
     }
   },
   es: {
@@ -196,12 +232,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Navegación',
-      project: 'Proyecto',
-      contactChannels: 'Canales de Contacto',
+      navigation: {
+        title: 'Navegación',
+        links: ['Inicio', 'Acerca de', 'Servicios', 'Contacto']
+      },
+      project: {
+        title: 'Proyecto',
+        links: ['Problema', 'Solución', 'Mecánica', 'Centros de Genio']
+      },
+      contactChannels: {
+        title: 'Canales de Contacto',
+        links: ['Chat IA', 'Herramientas de Medios', 'Unidad', 'Panel de Control']
+      },
       copyright: '© 2025 DiamondBridge. Todos los derechos reservados.',
-      version: 'Versión',
-      createdBy: 'Creado por'
+      version: 'Versión 1.0.0',
+      createdBy: 'Creado por MiniMax Agent'
     }
   },
   it: {
@@ -234,12 +279,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'Navigazione',
-      project: 'Progetto',
-      contactChannels: 'Canali di Contatto',
+      navigation: {
+        title: 'Navigazione',
+        links: ['Home', 'Chi siamo', 'Servizi', 'Contatti']
+      },
+      project: {
+        title: 'Progetto',
+        links: ['Problema', 'Soluzione', 'Meccanica', 'Hub di Genio']
+      },
+      contactChannels: {
+        title: 'Canali di Contatto',
+        links: ['Chat IA', 'Strumenti Media', 'Azionamento', 'Dashboard']
+      },
       copyright: '© 2025 DiamondBridge. Tutti i diritti riservati.',
-      version: 'Versione',
-      createdBy: 'Creato da'
+      version: 'Versione 1.0.0',
+      createdBy: 'Creato da MiniMax Agent'
     }
   },
   ja: {
@@ -254,7 +308,7 @@ export const translations: Record<Language, any> = {
       geniusHubs: '天才ハブ',
       aiChat: 'AIチャット',
       mediaTools: 'メディアツール',
-      drive: ' drive',
+      drive: 'drive',
       dashboard: 'ダッシュボード',
       contacts: '連絡先',
       contactUs: 'お問い合わせ'
@@ -272,12 +326,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: 'ナビゲーション',
-      project: 'プロジェクト',
-      contactChannels: 'お問い合わせチャネル',
+      navigation: {
+        title: 'ナビゲーション',
+        links: ['ホーム', '会社情報', 'サービス', 'お問い合わせ']
+      },
+      project: {
+        title: 'プロジェクト',
+        links: ['問題', '解決策', 'メカニズム', '天才ハブ']
+      },
+      contactChannels: {
+        title: 'お問い合わせチャネル',
+        links: ['AIチャット', 'メディアツール', 'drive', 'ダッシュボード']
+      },
       copyright: '© 2025 DiamondBridge. 無断転載を禁じます。',
-      version: 'バージョン',
-      createdBy: '作成者'
+      version: 'バージョン 1.0.0',
+      createdBy: '作成者 MiniMax Agent'
     }
   },
   zh: {
@@ -310,12 +373,21 @@ export const translations: Record<Language, any> = {
       }
     },
     footer: {
-      navigation: '导航',
-      project: '项目',
-      contactChannels: '联系渠道',
+      navigation: {
+        title: '导航',
+        links: ['首页', '关于我们', '服务', '联系我们']
+      },
+      project: {
+        title: '项目',
+        links: ['问题', '解决方案', '机制', '天才中心']
+      },
+      contactChannels: {
+        title: '联系渠道',
+        links: ['AI聊天', '媒体工具', '驱动器', '仪表板']
+      },
       copyright: '© 2025 DiamondBridge. 保留所有权利。',
-      version: '版本',
-      createdBy: '创建者'
+      version: '版本 1.0.0',
+      createdBy: '创建者 MiniMax Agent'
     }
   }
 };
