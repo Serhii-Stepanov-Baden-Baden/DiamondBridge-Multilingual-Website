@@ -1,9 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ErrorBoundary } from './components/ErrorBoundary.tsx';
-import { LanguageProvider } from './i18n/Context.tsx'; // 👈 обязательно!
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { LanguageProvider } from './i18n/Context'; // 👈 обязательно!
 import './index.css';
-import App from './App.tsx';
+import App from './App';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
