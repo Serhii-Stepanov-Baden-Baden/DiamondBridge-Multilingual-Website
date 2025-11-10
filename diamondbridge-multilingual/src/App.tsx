@@ -1,4 +1,4 @@
-// App.tsx — Полноценный DiamondBridge Multilingual Website
+` // App.tsx — Полноценный DiamondBridge Multilingual Website
 
 import React from 'react';
 import { LanguageProvider } from './i18n/Context';
@@ -19,26 +19,31 @@ import './index.css';
 
 const App = () => {
   return (
-     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900">
-    {/* Навигация */}
-    <Navigation />
-    
-    {/* Контент */}
-    <main className="pt-16">
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <MechanicsSection />
-      <GeniusHubsSection />
-      <AIChatSection />
-      <MediaToolsSection />
-      <DriveSection />
-      <DashboardSection />
-      <AboutSection />
-      <ContactSection />
-    </main>
-    
-    {/* Подвал */}
-    <Footer />
-  </div>
-``` 
+    <LanguageProvider>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900">
+        {/* Навигация */}
+        <Navigation />
+
+        {/* Контент */}
+        <main className="pt-16">
+          <HeroSection />
+          <ProblemSection />
+          <SolutionSection />
+          <MechanicsSection />
+          <GeniusHubsSection />
+          <AIChatSection />
+          <MediaToolsSection />
+          <DriveSection />
+          <DashboardSection />
+          <AboutSection />
+          <ContactSection />
+        </main>
+
+        {/* Подвал */}
+        <Footer />
+      </div>
+    </LanguageProvider>
+  );
+};
+
+export default App;
