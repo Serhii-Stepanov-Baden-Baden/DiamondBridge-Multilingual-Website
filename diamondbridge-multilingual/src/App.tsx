@@ -1,5 +1,4 @@
 // App.tsx — Полноценный DiamondBridge Multilingual Website
-
 import React from 'react';
 import { LanguageProvider } from './i18n/Context';
 import { Navigation } from './components/Navigation';
@@ -19,31 +18,28 @@ import './index.css';
 
 const App = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900">
-        {/* Навигация */}
-        <Navigation />
+    
+  <div className="App">
+    {/* Навигация */}
+    <Navigation />
+    {/* Контент */}
+    <HeroSection />
+    <ProblemSection />
+    <SolutionSection />
+    <MechanicsSection />
+    <GeniusHubsSection />
+    <AIChatSection />
+    <MediaToolsSection />
+    <DriveSection />
+    <DashboardSection />
+    <AboutSection />
+    <ContactSection />
+    {/* Подвал */}
+    <Footer />
+  </div>
+```
+);
 
-        {/* Контент */}
-        <main className="pt-16">
-          <HeroSection />
-          <ProblemSection />
-          <SolutionSection />
-          <MechanicsSection />
-          <GeniusHubsSection />
-          <AIChatSection />
-          <MediaToolsSection />
-          <DriveSection />
-          <DashboardSection />
-          <AboutSection />
-          <ContactSection />
-        </main>
-
-        {/* Подвал */}
-        <Footer />
-      </div>
-    </LanguageProvider>
-  );
 };
 
 export default App;
