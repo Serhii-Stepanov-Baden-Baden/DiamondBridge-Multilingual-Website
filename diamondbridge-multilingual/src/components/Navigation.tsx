@@ -1,9 +1,9 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navigation() {
-  const { t } = useI18n();
+const { t } = useLanguage();
 
   const navItems = [
     { key: 'home', href: '#home' },
