@@ -1,8 +1,8 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 
 export function Footer() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -84,7 +84,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright and Version */}
+        {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <div className="space-y-2">
             <p>{t('footer.copyright')}</p>
