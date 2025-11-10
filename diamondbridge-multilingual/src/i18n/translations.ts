@@ -5,6 +5,18 @@ export const translations = {
   ru: {
     // Навигация
     nav: {
+    ```javascript
+contact: 'Контакты',
+problem: 'Проблема',
+solution: 'Решение',
+mechanics: 'Механика',
+geniusHubs: 'Гениальные хабы',
+aiChat: 'ИИ Чат',
+mediaTools: 'Медиа Инструменты',
+drive: 'Драйв',
+dashboard: 'Панель Управления',
+contacts: 'Контакты',
+contactUs: 'Связаться'
       home: 'Главная',
       about: 'О нас',
       services: 'Услуги',
