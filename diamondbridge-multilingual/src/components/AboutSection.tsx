@@ -1,8 +1,8 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 
 export function AboutSection() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
 
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
