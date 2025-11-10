@@ -7,8 +7,6 @@ import { ProblemSection } from './components/ProblemSection';
 import { SolutionSection } from './components/SolutionSection';
 import { MechanicsSection } from './components/MechanicsSection';
 import { GeniusHubsSection } from './components/GeniusHubsSection';
-import { AIChatSection } from './components/AIChatSection';
-import { MediaToolsSection } from './components/MediaToolsSection';
 import { DriveSection } from './components/DriveSection';
 import { DashboardSection } from './components/DashboardSection';
 import { AboutSection } from './components/AboutSection';
@@ -27,8 +25,6 @@ const App = () => {
           <SolutionSection />
           <MechanicsSection />
           <GeniusHubsSection />
-          <AIChatSection />
-          <MediaToolsSection />
           <DriveSection />
           <DashboardSection />
           <AboutSection />
