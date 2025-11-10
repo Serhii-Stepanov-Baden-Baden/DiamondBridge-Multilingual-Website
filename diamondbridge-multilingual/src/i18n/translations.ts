@@ -5,7 +5,6 @@ export const translations = {
   ru: {
     // Навигация
     nav: {
-    ```javascript
 contact: 'Контакты',
 problem: 'Проблема',
 solution: 'Решение',
