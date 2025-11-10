@@ -1,8 +1,8 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 
 export function MechanicsSection() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
 
   const steps = t('solution.steps') as string[];
 
