@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLanguage } from '../i18n/Context';
-import LanguageSwitcher from './LanguageSwitcher';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navigation() {
-const { t } = useLanguage();
+  const { t } = useLanguage();
 
   const navItems = [
     { key: 'home', href: '#home' },
@@ -71,8 +71,6 @@ const { t } = useLanguage();
           {/* Language Switcher and Contact */}
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            
-            {/* Contact Button */}
             <button
               onClick={() => scrollToSection('#contacts')}
               className="hidden sm:block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
