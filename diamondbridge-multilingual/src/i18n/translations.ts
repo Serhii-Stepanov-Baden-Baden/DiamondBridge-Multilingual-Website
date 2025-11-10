@@ -1,27 +1,25 @@
-// translations.ts - Полная замена для 8 языков + ИИ
+// translations.ts — Полная замена для 8 языков + ИИ
 
 export const translations = {
   // Русский (по умолчанию)
   ru: {
     // Навигация
     nav: {
-contact: 'Контакты',
-problem: 'Проблема',
-solution: 'Решение',
-mechanics: 'Механика',
-geniusHubs: 'Гениальные хабы',
-aiChat: 'ИИ Чат',
-mediaTools: 'Медиа Инструменты',
-drive: 'Драйв',
-dashboard: 'Панель Управления',
-contacts: 'Контакты',
-contactUs: 'Связаться'
+      contact: 'Контакты',
+      problem: 'Проблема',
+      solution: 'Решение',
+      mechanics: 'Механика',
+      geniusHubs: 'Гениальные хабы',
+      aiChat: 'ИИ Чат',
+      mediaTools: 'Медиа Инструменты',
+      drive: 'Драйв',
+      dashboard: 'Панель Управления',
+      contacts: 'Контакты',
+      contactUs: 'Связаться',
       home: 'Главная',
       about: 'О нас',
-      services: 'Услуги',
-      contact: 'Контакты'
+      services: 'Услуги'
     },
-    
     // Главная
     home: {
       hero: {
