@@ -421,23 +421,18 @@ export const translations = {
     }
   }
 };
-
 // ✅ Сначала импорт
 import { translations } from './translations';
-
 // ✅ Типы
 export type Language = keyof typeof translations;
 export type TranslationKey = keyof typeof translations.ru;
-
 // ✅ Функция для получения перевода
 export const getTranslation = (lang: Language, key: string): string => {
   const getNestedValue = (obj: any, path: string[]): any =>
     path.reduce((acc, part) => acc?.[part], obj);
-
   const keys = key.split('.');
   const value = getNestedValue(translations[lang], keys);
   if (value) return value;
-
   const fallback = getNestedValue(translations.ru, keys);
   return fallback || key;
 };
