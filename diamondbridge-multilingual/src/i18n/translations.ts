@@ -1,9 +1,5 @@
-// translations.ts — Полная замена для 8 языков + ИИ
-
 export const translations = {
-  // Русский (по умолчанию)
   ru: {
-    // Навигация
     nav: {
       contact: 'Контакты',
       problem: 'Проблема',
@@ -20,31 +16,13 @@ export const translations = {
       about: 'О нас',
       services: 'Услуги'
     },
-    // Главная
     home: {
       hero: {
         title: 'Добро пожаловать в DiamondBridge',
         subtitle: 'Многоязычная платформа с искусственным интеллектом',
         description: 'Современная платформа с поддержкой 8 языков и встроенным ИИ-ассистентом'
-      },
-      features: {
-        title: 'Наши преимущества',
-        multilingual: {
-          title: 'Многоязычность',
-          description: 'Поддержка 8 языков с автоматическим определением и переключением'
-        },
-        ai: {
-          title: 'ИИ Ассистент',
-          description: 'Интеллектуальный помощник от MiniMax, отвечающий на любом языке'
-        },
-        performance: {
-          title: 'Высокая производительность',
-          description: 'Мгновенная загрузка и оптимизация для всех устройств'
-        }
       }
     },
-    
-    // ИИ Чат
     aiChat: {
       title: '🤖 ИИ Чат от MiniMax',
       subtitle: 'Общайтесь с искусственным интеллектом',
@@ -54,8 +32,6 @@ export const translations = {
       thinking: 'Думаю...',
       error: 'Ошибка соединения. Попробуйте ещё раз.'
     },
-    
-    // Общие
     common: {
       loading: 'Загрузка...',
       error: 'Ошибка',
@@ -63,41 +39,52 @@ export const translations = {
       cancel: 'Отмена',
       save: 'Сохранить',
       close: 'Закрыть'
+    },
+    footer: {
+      navigation: {
+        title: 'Навигация',
+        links: ['Главная', 'Проблема', 'Решение', 'Механика']
+      },
+      project: {
+        title: 'Проект',
+        links: ['Гениальные хабы', 'О нас', 'Контакты']
+      },
+      contactChannels: {
+        title: 'Связь',
+        email: 'Электронная почта',
+        telegram: 'Телеграм',
+        github: 'Гитхаб'
+      },
+      copyright: '© 2025 DiamondBridge',
+      version: 'Версия 1.0',
+      createdBy: 'Создано командой DiamondBridge'
     }
   },
 
-  // English
   en: {
     nav: {
+      contact: 'Contact',
+      problem: 'Problem',
+      solution: 'Solution',
+      mechanics: 'Mechanics',
+      geniusHubs: 'Genius Hubs',
+      aiChat: 'AI Chat',
+      mediaTools: 'Media Tools',
+      drive: 'Drive',
+      dashboard: 'Dashboard',
+      contacts: 'Contacts',
+      contactUs: 'Contact Us',
       home: 'Home',
       about: 'About',
-      services: 'Services',
-      contact: 'Contact'
+      services: 'Services'
     },
-    
     home: {
       hero: {
         title: 'Welcome to DiamondBridge',
         subtitle: 'Multilingual platform with artificial intelligence',
         description: 'Modern platform supporting 8 languages with built-in AI assistant'
-      },
-      features: {
-        title: 'Our Features',
-        multilingual: {
-          title: 'Multilingual',
-          description: 'Support for 8 languages with automatic detection and switching'
-        },
-        ai: {
-          title: 'AI Assistant',
-          description: 'Intelligent assistant from MiniMax, responding in any language'
-        },
-        performance: {
-          title: 'High Performance',
-          description: 'Instant loading and optimization for all devices'
-        }
       }
     },
-    
     aiChat: {
       title: '🤖 AI Chat from MiniMax',
       subtitle: 'Chat with artificial intelligence',
@@ -107,7 +94,6 @@ export const translations = {
       thinking: 'Thinking...',
       error: 'Connection error. Please try again.'
     },
-    
     common: {
       loading: 'Loading...',
       error: 'Error',
@@ -115,51 +101,61 @@ export const translations = {
       cancel: 'Cancel',
       save: 'Save',
       close: 'Close'
+    },
+    footer: {
+      navigation: {
+        title: 'Navigation',
+        links: ['Home', 'Problem', 'Solution', 'Mechanics']
+      },
+      project: {
+        title: 'Project',
+        links: ['Genius Hubs', 'About', 'Contacts']
+      },
+      contactChannels: {
+        title: 'Contact',
+        email: 'Email',
+        telegram: 'Telegram',
+        github: 'GitHub'
+      },
+      copyright: '© 2025 DiamondBridge',
+      version: 'Version 1.0',
+      createdBy: 'Created by the DiamondBridge team'
     }
   },
 
-  // Deutsch
   de: {
     nav: {
+      contact: 'Kontakt',
+      problem: 'Problem',
+      solution: 'Lösung',
+      mechanics: 'Mechanik',
+      geniusHubs: 'Genius Hubs',
+      aiChat: 'KI-Chat',
+      mediaTools: 'Medienwerkzeuge',
+      drive: 'Antrieb',
+      dashboard: 'Dashboard',
+      contacts: 'Kontakte',
+      contactUs: 'Kontaktieren Sie uns',
       home: 'Startseite',
       about: 'Über uns',
-      services: 'Dienstleistungen',
-      contact: 'Kontakt'
+      services: 'Dienstleistungen'
     },
-    
     home: {
       hero: {
         title: 'Willkommen bei DiamondBridge',
         subtitle: 'Mehrsprachige Plattform mit künstlicher Intelligenz',
         description: 'Moderne Plattform mit Unterstützung für 8 Sprachen und eingebautem KI-Assistenten'
-      },
-      features: {
-        title: 'Unsere Features',
-        multilingual: {
-          title: 'Mehrsprachigkeit',
-          description: 'Unterstützung für 8 Sprachen mit automatischer Erkennung und Umschaltung'
-        },
-        ai: {
-          title: 'KI-Assistent',
-          description: 'Intelligenter Assistent von MiniMax, der in jeder Sprache antwortet'
-        },
-        performance: {
-          title: 'Hohe Leistung',
-          description: 'Sofortige Ladezeit und Optimierung für alle Geräte'
-        }
       }
     },
-    
     aiChat: {
       title: '🤖 KI-Chat von MiniMax',
-      subtitle: 'Unterhalten Sie sich mit künstlicher Intelligenz',
-      placeholder: 'Schreiben Sie Ihre Nachricht...',
+      subtitle: 'Chatten Sie mit künstlicher Intelligenz',
+      placeholder: 'Geben Sie Ihre Nachricht ein...',
       send: 'Senden',
       welcome: 'Hallo! Ich bin Ihr KI-Assistent von MiniMax. Wie kann ich helfen?',
       thinking: 'Denke nach...',
       error: 'Verbindungsfehler. Bitte versuchen Sie es erneut.'
     },
-    
     common: {
       loading: 'Laden...',
       error: 'Fehler',
@@ -167,6 +163,25 @@ export const translations = {
       cancel: 'Abbrechen',
       save: 'Speichern',
       close: 'Schließen'
+    },
+    footer: {
+      navigation: {
+        title: 'Navigation',
+        links: ['Startseite', 'Problem', 'Lösung', 'Mechanik']
+      },
+      project: {
+        title: 'Projekt',
+        links: ['Genius Hubs', 'Über uns', 'Kontakt']
+      },
+      contactChannels: {
+        title: 'Kontakt',
+        email: 'E-Mail',
+        telegram: 'Telegram',
+        github: 'GitHub'
+      },
+      copyright: '© 2025 DiamondBridge',
+      version: 'Version 1.0',
+      createdBy: 'Erstellt vom DiamondBridge-Team'
     }
   },
 
