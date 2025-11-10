@@ -114,3 +114,12 @@ export const checkConnection = async (): Promise<boolean> => {
 export const getSupportedLanguages = (): string[] => {
   return Object.keys(demoResponses);
 };
+
+// 🧩 Универсальный клиент
+export const apiClient = async (url: string, options?: RequestInit): Promise<any> => {
+  const response = await fetch(`${API_BASE_URL}${url}`, options);
+  if (!response.ok) {
+    throw new Error(`Request failed: ${response.status}`);
+  }
+  return response.json();
+};
