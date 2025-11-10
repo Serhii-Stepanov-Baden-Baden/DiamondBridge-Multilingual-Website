@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../i18n/Context';
-import { LanguageSwitcher } from './LanguageSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export function Navigation() {
 const { t } = useLanguage();
