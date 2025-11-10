@@ -1,4 +1,4 @@
-// LanguageSwitcher.tsx - Переключатель языков с флагами
+// LanguageSwitcher.tsx — Переключатель языков с флагами
 
 import React from 'react';
 import { useLanguage } from '../i18n/Context';
@@ -25,23 +25,20 @@ const LanguageSwitcher: React.FC = () => {
   const { currentLanguage, setLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-md rounded-lg p-2 shadow-lg border border-white/20">
-      {languages.map((lang) => (
+    <div className="flex flex-wrap items-center gap-2 bg-white/80 backdrop-blur-md rounded-lg p-2 shadow-lg border border-white/20">
+      {languages.map(({ code, flag, nativeName }) => (
         <button
-          key={lang.code}
-          onClick={() => setLanguage(lang.code as any)}
-          className={`
-            flex items-center space-x-1 px-2 py-1 rounded-md text-sm font-medium
-            transition-all duration-200 hover:scale-105 hover:shadow-md
-            ${currentLanguage === lang.code
+          key={code}
+          onClick={() => setLanguage(code)}
+          className={`flex items-center gap-1 px-2 py-1 rounded-md text-sm font-medium transition-all duration-200
+            ${currentLanguage === code
               ? 'bg-blue-500 text-white shadow-lg border-2 border-blue-400'
               : 'bg-white/60 text-gray-700 hover:bg-white/80 border-2 border-transparent hover:border-gray-300'
-            }
-          `}
-          title={`Переключить на ${lang.name}`}
+            }`}
+          title={`Switch to ${nativeName}`}
         >
-          <span className="text-lg">{lang.flag}</span>
-          <span className="hidden sm:inline">{lang.nativeName}</span>
+          <span className="text-lg">{flag}</span>
+          <span className="hidden sm:inline">{nativeName}</span>
         </button>
       ))}
     </div>
