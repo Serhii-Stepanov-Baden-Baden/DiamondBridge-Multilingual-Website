@@ -26,14 +26,14 @@ interface ChatResponse {
 
 // 💬 Демо-ответы
 export const demoResponses: Record<string, string[]> = {
-  ru: [/* ... */],
-  en: [/* ... */],
-  de: [/* ... */],
-  fr: [/* ... */],
-  es: [/* ... */],
-  it: [/* ... */],
-  ja: [/* ... */],
-  zh: [/* ... */]
+  ru: ['Привет! Чем могу помочь?', 'Какой у вас вопрос?', 'Я здесь, чтобы помочь.'],
+  en: ['Hello! How can I assist you?', 'What would you like to know?', 'I\'m here to help.'],
+  de: ['Hallo! Wie kann ich helfen?', 'Was möchten Sie wissen?', 'Ich bin für Sie da.'],
+  fr: ['Bonjour! Comment puis-je vous aider?', 'Que souhaitez-vous savoir?', 'Je suis là pour vous aider.'],
+  es: ['¡Hola! ¿En qué puedo ayudarte?', '¿Qué necesitas saber?', 'Estoy aquí para ayudarte.'],
+  it: ['Ciao! Come posso aiutarti?', 'Cosa vuoi sapere?', 'Sono qui per aiutarti.'],
+  ja: ['こんにちは！どうお手伝いできますか？', '何を知りたいですか？', 'お手伝いします。'],
+  zh: ['你好！我可以帮你什么？', '你想了解什么？', '我在这里为您服务。']
 };
 
 // 🧪 Получить демо-ответ
