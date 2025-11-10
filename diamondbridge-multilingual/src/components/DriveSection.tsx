@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { apiClient, DriveFile } from '../services/api';
 import toast from 'react-hot-toast';
 
 export function DriveSection() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
   const [isConnected, setIsConnected] = useState(false);
   const [authCode, setAuthCode] = useState('');
 
