@@ -1,8 +1,8 @@
 import React from 'react';
-import { useI18n } from '../i18n/Context';
+import { useLanguage } from '../i18n/Context';
 
 export function SolutionSection() {
-  const { t } = useI18n();
+  const { t } = useLanguage();
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
